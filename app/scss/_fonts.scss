@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Open Sans-Light';
+    font-weight: 300;
+    font-style: normal;
+    src: local('OpenSans-Light'),
+         url('../fonts/OpenSans-Light.woff2') format('woff2'),
+         url('../fonts/OpenSans-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans-Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Regular-Light'),
+         url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans-Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: local('OpenSans-Medium'),
+         url('../fonts/OpenSans-Medium.woff2') format('woff2'),
+         url('../fonts/OpenSans-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans-SemiBold';
+    font-weight: 600;
+    font-style: normal;
+    src: local('OpenSans-SemiBold'),
+         url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+         url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Rubik-Light'),
+         url('../fonts/Rubik-Light.woff2') format('woff2'),
+         url('../fonts/Rubik-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ruda-Black';
+    font-weight: 900;
+    font-style: normal;
+    src: local('Ruda-Black'),
+         url('../fonts/Ruda-Black.woff2') format('woff2'),
+         url('../fonts/Ruda-Black.woff') format('woff');
+    font-display: swap;
+}
+
