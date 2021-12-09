@@ -6,45 +6,18 @@ $brown-90: #505050;
 $brown-80: #61645c;
 $brown-70: #c1c1c1;
 $fair-color: #fef7f0;
+$green-110: #4D810C;
 $green-100: #63A60E;
 $green-90: #63A60F;
 $green-70: #99c26d;
+$green-60: #E0EDCF;
+$green-50: #EFF6E7;
 $orange-100: #FF7A00;
+$yellow-100: #FFB800;
 $reed-color: #CF3E3B;
 $fair-90: #f6f6f6;
-$fair-80: #E0EDCF;
 $fair-70: #F5F5F5;
 
-
-%OpenSans-300 {
-    font-family: 'Open Sans';
-    font-weight: 300;
-}
-
-%OpenSans-400 {
-    font-family: 'Open Sans';
-    font-weight: 400;
-}
-
-%OpenSans-500 {
-    font-family: 'Open Sans';
-    font-weight: 500; 
-}
-
-%OpenSans-600 {
-    font-family: 'Open Sans';
-    font-weight: 600;
-}
-
-%OpenSans-700 {
-    font-family: 'Open Sans';
-    font-weight: 700; 
-}
-
-%Ruda-900 {
-    font-family: 'Ruda';
-    font-weight: 900; 
-}
 
 @function max($numbers...) {
   @return m#{i}x(#{$numbers});

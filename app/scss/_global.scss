@@ -1,37 +1,63 @@
-html,
-body {
-   
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 body {
     font-size: 14px;
     line-height: 1.6;
-    font-family: 'Open Sans';
-    font-weight: 700;
-    /*color: $white-color;*/
+    font-family: 'OpenSans', 'Arial', sans-serif;
+    font-weight: 400;
+    background-color: $width-color;
 }
 
 .title {
     font-size: 32px;
     line-height: 1.5;
-    font-family: 'DM Sans' sans-serif;
-    font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: $brown-110;
     text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
 }
 
 .container {
-    max-width: 1322px;
+    max-width: 1320px;
     padding: 0 15px;
     margin: 0 auto;
+}
 
-    &--lg {
-        max-width: 1920px;
+.button {
+    padding: 0 26px;
+    min-height: 47px;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    color: $green-100;
+    background-color: transparent;
+    border: 1px solid $green-100;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+   
+    &:hover {
+        background-color: $green-50;
     }
 
-    &--lg {
-        max-width: 2000px;
+    &:active {
+        color: $green-70;
+        box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+        background-color: $width-color;
+        border: solid $green-90;
     }
 }
 
