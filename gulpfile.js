@@ -96,7 +96,7 @@ function svgSprites() {
 
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
-    watch(['app/js/**/*.js', '!app/js/main.min.js'],  scripts);
+    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserSync.reload);
     watch(['app/images/*.svg'], svgSprites);
 }
@@ -105,7 +105,7 @@ function watching() {
 
 exports.styles      = styles;
 exports.scripts     = scripts;
-exports. browserSync = browserSync;
+exports.browserSync = browserSync;
 exports.watching    = watching;
 exports.images      = images;
 exports.build       = build;
@@ -113,5 +113,4 @@ exports.cleanDist   = cleanDist;
 exports.default     = series(cleanDist, images, build);
 exports.svgSprites  = svgSprites;
 
-exports.default = parallel(svgSprites, styles, fileincludes, scripts, browsersync, watching );
-exports.default = parallel(styles, scripts, browserSync, watching);
+exports.default = parallel(svgSprites, styles, fileincludes, scripts, browsersync, watching);
