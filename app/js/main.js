@@ -14,5 +14,6 @@ $(function(){
 
     var mixer = mixitup('.product-filter');
     var mixer = mixitup('.product-items');
+    
 });
 

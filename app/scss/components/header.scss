@@ -72,8 +72,18 @@
             color: $green-90;
             border-radius: 6px;
             background-color: $width-color;
+            overflow: hidden;
+            cursor: pointer;
             transition: background-color 0.3s ease;
             max-height: 50px;
+
+            &:active {
+               max-height: 400px;
+            }
+
+            &:focus {
+                max-height: 400px;
+            } 
         }
 
         &__selected {
@@ -101,6 +111,38 @@
                 width: 15px;
                 height: 15px;
                 display: block;
+            }
+        }
+
+        &__label {
+            padding: 15px 0;
+            display: block;
+            cursor: pointer;
+            color: $black-100;
+            max-width: 240px;
+            width: 100%;
+            padding-left: 10px;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $green-90;
+            }
+        }
+
+        &__link {
+            display: none;
+        }
+
+        &__option {
+            position: relative;
+            transition: width 0.3s, height 0.3s, background-color 0.3s;
+
+            &:hover:before {
+                content: "";
+                position: absolute;
+                background-color: $green-90;
+                width: 2px;
+                height: 50px;
             }
         }
 
