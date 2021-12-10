@@ -9,7 +9,7 @@ const browserSync   = require('browser-sync').create();
 const svgSprite     = require('gulp-svg-sprite');
 
 
-function browsersync() {
+function browserSync() {
     browserSync.init({
         server: {
             baseDir: 'app/'
@@ -27,7 +27,7 @@ function styles() {
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 10 versions'],
+            overrideBrowsersList: ['last 10 versions'],
             grid: true
         }))
         .pipe(dest('app/css'))
@@ -80,17 +80,17 @@ function cleanDist() {
 
 
 function svgSprites() {
-    return src('app/images/icons/*.svg') // выбираем в папке с иконками все файлы с расширением svg
+    return src('app/images/*.svg') 
       .pipe(
         svgSprite({
           mode: {
             stack: {
-              sprite: '../app/images/sprite.svg', // указываем имя файла спрайта и путь
+              sprite: '../images/sprite.svg', 
             },
           },
         })
       )
-          .pipe(dest('app/images')); // указываем, в какую папку поместить готовый файл спрайта
+          .pipe(dest('app/images')); 
   }
 
 
@@ -105,7 +105,7 @@ function watching() {
 
 exports.styles      = styles;
 exports.scripts     = scripts;
-exports.browersync  = browersync;
+exports. browserSync = browserSync;
 exports.watching    = watching;
 exports.images      = images;
 exports.build       = build;
@@ -113,6 +113,5 @@ exports.cleanDist   = cleanDist;
 exports.default     = series(cleanDist, images, build);
 exports.svgSprites  = svgSprites;
 
-
-exports.default = parallel(svgSprites, styles, fileincludes, scripts, browsersync, watching, );
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(svgSprites, styles, fileincludes, scripts, browsersync, watching );
+exports.default = parallel(styles, scripts, browserSync, watching);
